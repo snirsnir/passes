@@ -1,0 +1,73 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    direction: rtl; /* RTL direction */
+    background: linear-gradient(to left, #74ebd5, #acb6e5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#game {
+    width: 90%; /* Adjusted for a larger screen */
+    max-width: 600px; /* Increased max width for a larger view */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px; /* More padding for a larger look */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+input[type="text"], button {
+    width: 100%;
+    padding: 15px; /* Larger touch area */
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px; /* Larger font size */
+    transition: all 0.3s ease-in-out;
+}
+
+button {
+    background-color: #74ebd5;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #68d3c5;
+}
+
+#feedback {
+    margin-top: 20px; /* More space */
+    color: #d9534f;
+    font-size: 18px; /* Larger font size */
+}
+input[type="text"], input[type="password"] {
+    width: 100%; /* Ensure full width */
+    padding: 10px; /* Adequate padding */
+    margin-top: 10px; /* Consistent margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border: 1px solid #ccc; /* Standard border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Explicit font size */
+    line-height: 1.5; /* Adequate line height for visibility */
+    transition: all 0.3s ease-in-out; /* Smooth transition for focus */
+}
+
+input:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+#storyImage {
+    width: 400px; /* Set width to 400px */
+    height: 400px; /* Set height to 400px */
+    object-fit: cover; /* Cover ensures the image covers the area, maintaining its aspect ratio */
+    margin-bottom: 20px; /* Maintain margin for spacing */
+    border-radius: 10px; /* Optional: Adds rounded corners to the image */
+}
